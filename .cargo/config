@@ -1,0 +1,7 @@
+[target.x86_64-apple-darwin]
+rustflags = [   "-C", "target-cpu=native",
+                "-L", "native=/usr/local/opt/gcc/lib/gcc/9/",
+                "-L", "native=/usr/local/opt/openblas/lib",
+                #"--emit", "asm"
+#        "-l", "dylib=openblas"
+        ]
